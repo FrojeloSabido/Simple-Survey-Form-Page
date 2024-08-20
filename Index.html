@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width",initial-scale=1.0" />
+	<title>Simple Fillup Form Page</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="app.js"> </script>
+	
+</head>
+<body>
+
+    <h1> Best Programming Language Survey Form </h1>
+
+    <!-- Create Form -->
+	<form id="form">
+	
+	<!-- Input Type Text and Label -->
+	<div class="form-control">
+	<label for="name" id="label-name"> Name </label>
+	<input type="text" id="name" placeholder="Enter your name" />
+	</div>
+	
+	<!-- Input Type Email and Label -->
+	<div class="form-control">
+	<label for="email" id="label-email"> Email </label>
+	<input type="email" id="email" placeholder="Enter your email" />
+	</div>
+	
+	<!-- Input Type Age and Label -->
+	<div class="form-control">
+	<label for="age" id="label-age"> Age </label>
+	<input type="number" id="age" placeholder="Emter your age" />
+	</div>
+	
+	<!-- Dropdown options and Label -->
+	<div class="form-control">
+	<label for="role" id="label-role"> What is your role? </label>
+    <select name="role" id="role">
+	<option value="student">Student</option>
+	<option value="intern">Intern</option>
+	<option value="professional">Professional</option>
+	<option value="other">Other</option>
+	</select>	
+	</div>
+	
+	<!-- RadioButtons and Label -->
+	<div class="form-control">
+	<label> Pick the best Programming Language you learn <small>(Check all that apply)</small> </label>
+	<label> <br> <input type="checkbox" name="inpt"> C </input> </label>
+	<label> <br> <input type="checkbox" name="inpt"> C++ </input> </label> 
+	<label> <br> <input type="checkbox" name="inpt"> C# </input> </label>
+	<label> <br> <input type="checkbox" name="inpt"> CSS </input> </label>
+	<label> <br> <input type="checkbox" name="inpt"> HTML </input> </label>
+	<label> <br> <input type="checkbox" name="inpt"> SQL </input> </label>
+	<label> <br> <input type="checkbox" name="inpt"> Java </input> </label>
+	<label> <br> <input type="checkbox" name="inpt"> Python </input> </label>
+	<label> <br> <input type="checkbox" name="inpt"> JavaScript </input> </label>
+	</div>
+	
+	<!-- Textarea and Label -->
+	<div class="form-control">
+	<label> Any Comments or Suggestions </label> <br>
+	<textarea name="comment" id="comment" placeholder="Enter your comment here"> </textarea>
+	<button class="button" onclick="myFunction()"> Submit </button>
+	</div>
+	
+	</form>
+</body>
+</html>
